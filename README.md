@@ -6,7 +6,7 @@
 Go in termninal:
 
 First: cd Desktop // 
-Second: git clone https://github.com/LauraFejza/TECHSTITUTIONPROJECT // 
-Third: cd contract-management-system // 
+Second: git clone https://github.com/LauraFejza/ // 
+Third: cd TECHSTITUTIONPROJECT // 
 npm install // 
 nodemon
