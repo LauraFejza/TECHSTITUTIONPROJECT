@@ -1,0 +1,133 @@
+<% include partials/header %>
+
+<div class="custom-container container">
+			<h1 style="color:	#13293C;padding-top: 40px;">Shto kontraten e re</h1>
+			<h3 class="distanca">Prokurimi</h3>
+			<form method="POST" action="/todos/add">
+			<div class="row distanca-1">
+				<div class="col-md-6 ">
+					<label for="">Nr. rendor i prokurimit</label>
+					<br>
+					<input class="form-control" type="number" name="number" placeholder="Numri rendor i prokurimit">
+				</div>
+				<div class="col-md-6">
+					<label for="">Lloji i prokurimit</label>
+					<br>
+					<input class="form-control" type="text" name="description" placeholder="Lloji i prokurimit">
+					<br>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<label for="">Aktiviteti i prokurimit</label>
+					<br>
+					<input class="form-control" type="text" name="title" placeholder="Aktiviteti i prokurimit">
+				</div>
+			</div>
+			
+
+			<h3 class="distanca">Datat</h3>
+			<form>
+
+			<div class="row distanca-1">
+				<div class="col-md-6">
+					<label for="">Data e inicimit te aktivitetit<br>te prokurimit</label>
+					<br>
+					<input class="form-control" type="date">
+				</div>
+				<div class="col-md-6">
+					<label for="">Data e publikimit <br> te shpalljes</label>
+					<br>
+					<input class="form-control" type="date" name="date">
+					<br>
+				</div>
+			</div>
+
+
+
+			<div class="row">
+				<div class="col-md-12">
+
+					<label for="">Data e nenshkrimit te kontrates</label>
+					<br>
+					<input class="form-control" type="date">
+				</div>
+			</div>
+
+
+
+			<div class="row distanca-1">
+				<div class="col-md-12">
+				<label for="">Afatet per implementimin e kontrates</label>
+				</div>
+				<div class="col-md-6">
+					<input class="form-control" type="date" >
+				</div>
+				<div class="col-md-6">
+					<input class="form-control" type="date" >
+				</div>
+			</div>
+
+
+
+				<div class="row distanca-1">
+				<div class="col-md-12">
+				<label for="">Data e permbylljes se kontrates
+				</label>
+				</div>
+				<div class="col-md-12">
+					<input class="form-control" type="date">
+				</div>
+			</div>
+
+
+
+			<h3 class="distanca">Cmimi dhe te dhenat tjera:</h3>
+			<form>
+
+			<div class="row distanca-1">
+				<div class="col-md-6">
+					<label for="">Cmimi i kontrates - duke perfshire<br>
+								  te gjitha taksat)
+					</label>
+					<br>
+					<input class="form-control" type="number" placeholder="Cmimi total">
+				</div>
+
+				<div class="col-md-6">
+					<label for="">Cmimi total i paguar<br>per kontraten</label>
+					<br>
+					<input class="form-control" type="number" placeholder="Cmimi i kontrates">
+					<br>
+				</div>
+			</div>
+
+
+
+			<div class="row">
+				<div class="col-md-12">
+					<label for="">Emri i te cilit i eshte dhene kontrata</label>
+					<br>
+					<input class="form-control" type="text" placeholder="Emri dhe mbiemri">
+				</div>
+			</div>
+			<br>
+
+
+
+			<div class="row distanca-1">
+				<div class="col-md-6">
+					<button class="btn btn-block" style="color:white;background-color:#428bca;" type="submit">DERGO</button>
+				</div>
+				<div class="col-md-6">
+					<button class="btn btn-block btn-secondary">FSHIJ</button>
+				</div>
+			</div>
+
+		</form>
+		</div>
+
+
+
+
+<% include partials/footer %>

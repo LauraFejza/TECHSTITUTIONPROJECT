@@ -1,0 +1,27 @@
+<% include partials/header %>
+
+<form method="POST" action="/todos/update/<%= doc._id %>">
+
+
+	<div>
+		<label>Todo titulli: </label>
+		<input type="text" value="<%= doc.title %>" name="title" placeholder="Shto titullin">
+
+	</div>
+
+
+
+	<div>
+		<label>Todo pershkrimi: </label>
+		<textarea name="description"  placeholder="Shto pershkrimin">
+			<%= doc.description %>
+		</textarea>
+	</div>
+
+
+	<button type="submit">Ndrysho</button>
+</form>
+
+
+
+<% include partials/footer %>

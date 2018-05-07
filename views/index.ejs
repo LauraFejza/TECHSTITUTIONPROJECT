@@ -1,0 +1,41 @@
+<% include partials/header %>
+
+
+<div class="container">
+
+
+
+<h3>Kontratat</h3>
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Numri rendor i prokurimit </th>
+      <th scope="col">Aktiviteti i prokurimit </th>
+      <th scope="col">Data e publikimit te shpalljes</th>
+      <th scope="col">Cmimi i kontrates</th>
+    </tr>
+  </thead>
+
+
+
+  <tbody>
+  <%  docs.map(function(doc){ %>  
+
+    <tr>
+      <th scope="row"><%= doc.number %></th>
+      <td><%= doc.description %></td>
+      <td><%= doc.date%></td>
+      <td><a href="/todos/edit/<%= doc._id %>">Ndrysho/</a><a href="/todos/delete/<%= doc._id %>">Fshij</a></td>
+    </tr>
+      <% }) %>
+  </tbody>
+</table>
+
+
+<a href="/todos/add/"><button class="btn btn-secondary">Shto kontraten e re</button></a>
+</div>
+
+
+<% include partials/footer %>
